@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <title>Code Snippets</title>
+  </head>
+
+<body>
+  <h1>Hello Extensions</h1>
+
+
+<p>
+  <img src="https://hq.ioof.com.au/s/-esdn2g/8804/1phjtiw/_/images/icons/emoticons/help_16.svg" alt=""/> Unverified
+</p>
+<p>
+  <img src="https://hq.ioof.com.au/s/-esdn2g/8804/1phjtiw/_/images/icons/emoticons/check.svg" alt=""/> Pass
+</p>
+<p>
+  <img src="https://hq.ioof.com.au/s/-esdn2g/8804/1phjtiw/_/images/icons/emoticons/check.svg" alt=""/> Pass (not applicable)
+</p>
+<p>
+  <img src="https://hq.ioof.com.au/s/-esdn2g/8804/1phjtiw/_/images/icons/emoticons/warning.svg" alt=""/> Warning
+</p>
+<p>
+  <img src="https://hq.ioof.com.au/s/-esdn2g/8804/1phjtiw/_/images/icons/emoticons/error.svg" alt=""/> Fail
+</p>
+
+  <details>
+    <summary>General</summary>
+    <div class="code-snippet">
+      <h2>Create array of strings from a web page.</h2>
+      <iframe src="General/toArrayOfStrings.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+
+    <div class="code-snippet">
+      <h2>Format an array of strings into a list.</h2>
+      <iframe src="General/toList.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+
+    <div class="code-snippet">
+      <h2>List.</h2>
+      <iframe src="List.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+  </details>
+
+
+
+
+  <details>
+    <summary>Confluence</summary>
+    <div class="code-snippet">
+      <h2>Id of a business rule</h2>
+      <iframe src="Confluence/businessRuleID.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+    <div class="code-snippet">
+      <h2>Insert an icon (pass, warning, fail, unverified)</h2>
+      <iframe src="Confluence/insertIcon.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+    <div class="code-snippet">
+      <h2>Replace image with a link to that image</h2>
+      <iframe src="Confluence/insertLinkToImage.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+  </details>
+
+
+  <details>
+    <summary>Personal</summary>
+    <div class="code-snippet">
+      <h2>Shopping receipt</h2>
+      <iframe src="Personal/shoppingReceipt.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+  </details>
+
+
+
+  <details>
+    <summary>Web accessibility</summary>
+    <div class="code-snippet">
+      <h2>Alter font properties</h2>
+      <iframe src="Accessibility/alterFontProperties.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+    <div class="code-snippet">
+      <h2>Disable images from web page</h2>
+      <iframe src="Accessibility/disableImages.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+    <div class="code-snippet">
+      <h2>Check colour contrast</h2>
+      <iframe src="Accessibility/checkColourContrast.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+    <div class="code-snippet">
+      <h2>Generate list of headings</h2>
+      <iframe src="Accessibility/generateListOfHeadings.js" frameborder="0"></iframe>
+      <p>
+        <button type="button">Copy code snippet</button>
+      </p>
+    </div>
+  </details>
+
+
+  <script>
+    document.body.addEventListener('click', e => {
+
+      if (e.target.nodeName === "BUTTON") {
+        const codeSnippet = e.target.closest('details').querySelector('code').textContent;
+        navigator.clipboard.writeText(codeSnippet);
+      }
+    });
+  </script>
+
+  <style>
+    iframe {
+      border: solid 0.5rem;
+      padding: 1rem;
+    }
+  </style>
+</body>
+
+</html>

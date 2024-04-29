@@ -1,0 +1,33 @@
+<html lang="en">
+  <body>
+    <h1>Hello Extensions</h1>
+
+
+    <details>
+      <summary>Confluence</summary>
+      <h2>Id of a business requirement</h2>
+      <code>
+        /* This piece of code updates the id of each business rule located in the "id"
+        column of the "business rules" table. For example, 'BR-1', 'BR-2'. This is useful 
+        when rows are inserted in the table. It avoids manual updating of the id of each 
+        business rule. */
+
+        const selector = 'td:first-of-type';
+
+        $0.querySelectorAll(selector).forEach((e, index) => {    
+            e.textContent = `BR-${index + 1}`; 
+        });
+      </code>
+    </details>
+
+    
+    <style>
+      code {
+        background: black;
+        color: green;
+        white-space: pre-line;
+      }
+    </style>
+  </body>
+</html>
+

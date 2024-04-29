@@ -1,0 +1,19 @@
+{
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "popup.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "description": "Base Level Extension",
+  "manifest_version": 3,
+  "name": "Web Accessibility Testing",
+  "version": "1.0"
+}
