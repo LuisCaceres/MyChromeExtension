@@ -179,6 +179,7 @@ class List extends Array {
 // Let `map` be.
 const map = new Map([
   ['A', 5],
+  ['BLOCKQUOTE', 20],
   ['BUTTON', 5],
   ['H1', 10],
   ['H2', 10],
@@ -198,7 +199,7 @@ const sentence = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inven
 // Let `words` be a list that includes every word found in `sentence`.
 const words = new List(...sentence.split(' '));
 // Let `selector` be a CSS selector.
-const selector = ['a, button, h1, h2, h3, h4, h5, h6, label, option, p, td, th'];
+const selector = ['a, blockquote, button, h1, h2, h3, h4, h5, h6, label, option, p, td, th'];
 // Let `elements` be a list that incluces every element that matches `selector`.
 const elements = [...document.querySelectorAll(selector)];
 
@@ -227,17 +228,6 @@ for (const element of elements) {
     textNode.textContent = randomWords.join(" ");
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

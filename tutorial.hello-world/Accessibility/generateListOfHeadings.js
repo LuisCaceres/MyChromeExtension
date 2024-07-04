@@ -13,7 +13,6 @@ headings.forEach((heading, index) => {
     console.log(`${indentation}${level}: ${textContent}`);
 });
 
-
  // Let `links` be .
  const links = [...document.querySelectorAll('a')];
 
